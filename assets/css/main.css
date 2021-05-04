@@ -1807,7 +1807,7 @@ body.is-preload #footer {
   margin-bottom: 2rem;
 }
 
-.technology-container {
+.skill-container {
   display: flex;
   display: -moz-flex;
   display: -webkit-flex;
@@ -1819,12 +1819,12 @@ body.is-preload #footer {
   transition: 1s;
 }
 
-.technology-container:hover .devicon {
+.skill-container:hover .devicon {
   background-color: rgba(255, 255, 255, 0.5);
   transition: 1s;
 }
 
-.technology-container:hover .devicon-redux {
+.skill-container:hover .devicon-redux {
   background-color: rgba(255, 255, 255, 0.5);
   transition: 1s;
 }
@@ -1843,7 +1843,7 @@ body.is-preload #footer {
   border-radius: 12.5%;
 }
 
-.technology-text {
+.skill-text {
   color: rgba(255, 255, 255, 0.9);
   margin-left: 0.5rem;
   text-transform: uppercase;
@@ -1854,13 +1854,13 @@ body.is-preload #footer {
 }
 
 @media screen and (max-width: 530px) {
-  .technology-text {
+  .skill-text {
     transition: 1s;
     font-size: 0.65rem;
     margin-top: 5px;
   }
 
-  .technology-container {
+  .skill-container {
     justify-content: center;
     flex-direction: column;
     transition: 1s;
