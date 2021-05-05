@@ -1277,7 +1277,7 @@ button {
   -ms-transition: -ms-transform 0.325s ease-in-out,
     -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-  background-image: url("../../images/bg.jpg");
+  background-image: url("../../images/Free-HD-Gif-Wallpapers.gif");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1674,7 +1674,7 @@ body.is-preload #header .content .inner {
   position: relative;
   width: 40rem;
   max-width: 100%;
-  background-color: rgba(27, 31, 34, 0.85);
+  background-color: rgba(27, 31, 34, 0.95);
   border-radius: 4px;
   opacity: 0;
 }
