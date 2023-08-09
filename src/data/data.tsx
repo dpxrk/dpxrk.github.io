@@ -1,6 +1,6 @@
 import {
   AcademicCapIcon,
-  ArrowDownTrayIcon,
+  // ArrowDownTrayIcon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
@@ -11,7 +11,6 @@ import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
 import heroImage from '../images/header-background.jpg';
-
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -20,10 +19,10 @@ import {
   ContactType,
   Hero,
   HomepageMeta,
+  ReferenceSection,
   // PortfolioItem,
   SkillGroup,
   Social,
-  ReferenceSection,
   TimelineItem,
 } from './dataDef';
 
