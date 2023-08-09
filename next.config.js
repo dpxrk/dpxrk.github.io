@@ -24,8 +24,10 @@ const nextConfig = {
   swcMinify: true,
   trailingSlash: false,
   images: {
+    unoptimized: true,
     domains: ['images.unsplash.com', 'source.unsplash.com'],
   },
+  output: 'export',
 };
 
 module.exports = nextConfig;
