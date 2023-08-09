@@ -1,7 +1,6 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  BuildingOffice2Icon,
   CalendarIcon,
   FlagIcon,
   MapIcon,
@@ -11,20 +10,8 @@ import {
 import GithubIcon from '../components/Icon/GithubIcon';
 import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
-import heroImage from '../images/header-background.webp';
-// import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-// import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-// import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
-// import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-// import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
-// import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-// import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
-// import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-// import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-// import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
-// import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
+import heroImage from '../images/header-background.jpg';
+
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
 import {
@@ -80,12 +67,12 @@ export const heroData: Hero = {
     </>
   ),
   actions: [
-    {
-      href: '/assets/resume.pdf',
-      text: 'Resume',
-      primary: true,
-      Icon: ArrowDownTrayIcon,
-    },
+    // {
+    //   href: 'assets/park_daniel_resume.pdf',
+    //   text: 'Resume',
+    //   primary: true,
+    //   Icon: ArrowDownTrayIcon,
+    // },
     {
       href: `#${SectionId.Contact}`,
       text: 'Contact',
@@ -264,12 +251,17 @@ export const experience: TimelineItem[] = [
         Developed and maintained a web repository using TypeScript, ReactJs, webRTC, and TensorFlow, resulting in a more
         efficient and user-friendly web application.
         <br />
+        <br />
         Implemented advanced webRTC features to enable real-time communication capabilities, enhancing the overall user
         experience.
+        <br />
         <br /> Optimized code performance and improved application speed by leveraging ReactJs best practices and
         utilizing the latest features.
-        <br /> Collaborated with cross-functional teams to identify and address technical issues, ensuring seamless
-        integration and deployment of new features.
+        <br />
+        <br />
+        Collaborated with cross-functional teams to identify and address technical issues, ensuring seamless integration
+        and deployment of new features.
+        <br />
         <br /> Conducted thorough testing and debugging to ensure high-quality code and minimize system vulnerabilities.
       </p>
     ),

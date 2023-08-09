@@ -84,7 +84,7 @@ const References: FC = memo(() => {
               className="no-scrollbar flex w-full touch-pan-x snap-x snap-mandatory gap-x-6 overflow-x-auto scroll-smooth"
               onScroll={handleScroll}
               ref={scrollContainer}>
-              {references.map((reference, index) => {
+              {references.map((reference: any, index: number) => {
                 const isActive = index === activeIndex;
                 return <Reference isActive={isActive} key={`${reference.name}-${index}`} reference={reference} />;
               })}
@@ -100,7 +100,9 @@ const References: FC = memo(() => {
                     )}
                     disabled={isActive}
                     key={`select-button-${index}`}
-                    onClick={setReference(index)}></button>
+                    onClick={setReference(index)}>
+                    {' '}
+                  </button>
                 );
               })}
             </div>
