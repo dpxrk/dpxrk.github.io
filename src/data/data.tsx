@@ -89,7 +89,7 @@ export const aboutData: About = {
   aboutItems: [
     {label: 'Location', text: 'Garwood, NJ', Icon: MapIcon},
     {label: 'Age', text: '28', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Korean', Icon: FlagIcon},
+    {label: 'Nationality', text: 'American', Icon: FlagIcon},
     {label: 'Interests', text: 'Video Games, Lifting, Tennis', Icon: SparklesIcon},
     {label: 'College', text: 'Rutgers Univesrity', Icon: AcademicCapIcon},
     // {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
