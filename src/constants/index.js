@@ -15,10 +15,10 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+ 
+  visionable,
+
+  
   carrent,
   jobit,
   tripguide,
@@ -116,9 +116,9 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Full Stack Developer",
+    company_name: "Visionable Global Inc",
+    icon: visionable,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
