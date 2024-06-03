@@ -14,7 +14,6 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   visionable,
   bofa,
   reverse,
@@ -23,6 +22,8 @@ import {
   tripguide,
   threejs,
   noah,
+  python,
+  java,
 } from "../assets";
 
 export const navLinks = [
@@ -61,23 +62,31 @@ const services = [
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
+    name: "TypeScript",
+    icon: typescript,
   },
   {
     name: "JavaScript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "React JS",
+    name: "Java",
+    icon: java,
+  },
+  {
+    name: "HTML5",
+    icon: html,
+  },
+  {
+    name: "CSS3",
+    icon: css,
+  },
+  {
+    name: "ReactJS",
     icon: reactjs,
   },
   {
@@ -85,11 +94,11 @@ const technologies = [
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "TailwindCSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "NodeJS",
     icon: nodejs,
   },
   {
@@ -97,7 +106,7 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "Three JS",
+    name: "ThreeJS",
     icon: threejs,
   },
   {
@@ -107,10 +116,6 @@ const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
   },
 ];
 
@@ -136,7 +141,7 @@ const experiences = [
     iconBg: "#E6DEDD",
     date: "October 2020 - April 2021",
     points: [
-      "Left Bank of America in February 2020 to be unexpectedly faced with COVID-19 Lockdown. After a few months, and the country reopening, entered an online coding bootcamp: App Academy",
+      "Left Bank of America in February 2020 to be unexpectedly faced with COVID-19 Lockdown. After a few months, and the country reopening, entered an online coding bootcamp: App Academy.",
     ],
   },
   {
@@ -146,53 +151,43 @@ const experiences = [
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Managed asset transitions from deceased clients to inheriting clients, handling over 40 cases per quarter, which resulted in seamless transfers and enhanced client satisfaction.",
+      "Successfully transitioned over $10M in new assets to the firm.",
+      "Assisted clients in executing trades and managing securities, providing expert guidance over the phone.",
     ],
   },
   {
     title: "Assistant Loan Underwriter",
     company_name: "Noah Bank",
     icon: noah,
-    iconBg: "#E6DEDD",
+    iconBg: "#FFFEFE",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Conducted comprehensive financial analyses to determine customer eligibility based on the bank's risk profile.",
+      "Managed and processed over 15 loans totaling $25M, ensuring successful distribution to clients.",
     ],
   },
 ];
 
-// const testimonials = [
-//   {
-//     testimonial:
-//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-//     name: "Sara Lee",
-//     designation: "CFO",
-//     company: "Acme Co",
-//     image: "https://randomuser.me/api/portraits/women/4.jpg",
-//   },
-//   {
-//     testimonial:
-//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
-//     name: "Chris Brown",
-//     designation: "COO",
-//     company: "DEF Corp",
-//     image: "https://randomuser.me/api/portraits/men/5.jpg",
-//   },
-//   {
-//     testimonial:
-//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-//     name: "Lisa Wang",
-//     designation: "CTO",
-//     company: "456 Enterprises",
-//     image: "https://randomuser.me/api/portraits/women/6.jpg",
-//   },
-// ];
+const testimonials = [
+  {
+    testimonial:
+      "Dan stands out for his exceptional energy, remarkable ability to learn quickly, and his dedication to his work. His enthusiasm for taking on new challenges was evident in his eagerness to delve into unfamiliar tasks and technologies.",
+    name: "Dustin Swan",
+    designation: "FrontEnd & API Lead",
+    company: "Visionable Global Inc",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4lsuc85FysY6SP6_k8m5S23GAAZnGiV35YA&s",
+  },
+  {
+    testimonial:
+      "Dan was a critical member of the team and his technical skills, coupled with a genuine interest in staying updated on industry advancements, makes him an excellent software developer.",
+    name: "Anthony Martin",
+    designation: "CTO",
+    company: "Visionable Global Inc",
+    image: "https://visionable.com/wp-content/uploads/2021/03/antony.jpg",
+  },
+];
 
 // const projects = [
 //   {
@@ -260,4 +255,4 @@ const experiences = [
 //   },
 // ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials };

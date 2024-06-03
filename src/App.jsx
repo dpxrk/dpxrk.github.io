@@ -1,4 +1,4 @@
-import { Navbar, Hero, About, Experience } from "./components";
+import { Navbar, Hero, About, Experience, Feedbacks, Tech } from "./components";
 import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
@@ -12,6 +12,8 @@ const App = () => {
           </div>
           <About />
           <Experience />
+          <Feedbacks />
+          <Tech />
         </div>
       </BrowserRouter>
     </>
