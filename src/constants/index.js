@@ -149,7 +149,7 @@ const experiences = [
     company_name: "Bank of America",
     icon: bofa,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2018 - Jan 2020",
     points: [
       "Managed asset transitions from deceased clients to inheriting clients, handling over 40 cases per quarter, which resulted in seamless transfers and enhanced client satisfaction.",
       "Successfully transitioned over $10M in new assets to the firm.",
@@ -161,7 +161,7 @@ const experiences = [
     company_name: "Noah Bank",
     icon: noah,
     iconBg: "#FFFEFE",
-    date: "Jan 2023 - Present",
+    date: "May 2017 - December 2017",
     points: [
       "Conducted comprehensive financial analyses to determine customer eligibility based on the bank's risk profile.",
       "Managed and processed over 15 loans totaling $25M, ensuring successful distribution to clients.",
