@@ -1,4 +1,12 @@
-import { Navbar, Hero, About, Experience, Feedbacks, Tech } from "./components";
+import {
+  Navbar,
+  Hero,
+  About,
+  Experience,
+  Feedbacks,
+  Tech,
+  Contact,
+} from "./components";
 import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
@@ -12,8 +20,11 @@ const App = () => {
           </div>
           <About />
           <Experience />
-          <Feedbacks />
           <Tech />
+          <Feedbacks />
+          <div className="relative z-0">
+            <Contact />
+          </div>
         </div>
       </BrowserRouter>
     </>
