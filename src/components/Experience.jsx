@@ -10,7 +10,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "./hoc";
-import { textVariant } from "./utils/motions";
+import { textVariant } from "./utils./motions";
 
 const ExperienceCard = ({ experience }) => {
   return (
@@ -27,7 +27,7 @@ const ExperienceCard = ({ experience }) => {
           <img
             src={experience.icon}
             alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
+            className="w-[75%] h-[75%] object-contain"
           />
         </div>
       }
