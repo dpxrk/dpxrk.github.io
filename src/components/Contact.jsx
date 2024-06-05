@@ -27,10 +27,6 @@ const Contact = () => {
     });
   };
 
-  useEffect(() => {
-    console.log("THIS IS THE FORM", form.email);
-  }, [form]);
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
