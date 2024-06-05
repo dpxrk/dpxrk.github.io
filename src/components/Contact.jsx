@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
@@ -19,15 +19,17 @@ const Contact = () => {
 
   const handleChange = (e) => {
     const { target } = e;
-    const { name, nameValue } = target;
-    const { email, emailValue } = emailTarget;
+    const { name, value } = target;
 
     setForm({
       ...form,
-      [name]: nameValue,
-      [email]: emailValue,
+      [name]: value,
     });
   };
+
+  useEffect(() => {
+    console.log("THIS IS THE FORM", form.email);
+  }, [form]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
