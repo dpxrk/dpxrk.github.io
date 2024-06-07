@@ -17,9 +17,8 @@ import {
   visionable,
   bofa,
   reverse,
-  carrent,
-  jobit,
-  tripguide,
+  rutgers,
+  stevens,
   threejs,
   noah,
   python,
@@ -121,6 +120,14 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Graduate Student",
+    company_name: "Stevens Institute of Technology",
+    icon: stevens,
+    iconBg: "#FFFEFE",
+    date: "May 2024 - Present",
+    points: ["Pursuing a Masters in Computer Science"],
+  },
+  {
     title: "Full Stack Developer",
     company_name: "Visionable Global Inc",
     icon: visionable,
@@ -166,6 +173,14 @@ const experiences = [
       "Conducted comprehensive financial analyses to determine customer eligibility based on the bank's risk profile.",
       "Managed and processed over 15 loans totaling $25M, ensuring successful distribution to clients.",
     ],
+  },
+  {
+    title: "Undergraduate Student",
+    company_name: "Rutgers University - Business School",
+    icon: rutgers,
+    iconBg: "#FFFEFE",
+    date: "Sept 2013 - January 2018",
+    points: ["Graduated with a Finance Degree from Rutgers Business School"],
   },
 ];
 
