@@ -8,6 +8,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import stevens from "./stevens.jpg";
 import rutgers from "./rutgers.png";
+import richemont from "./richemont.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -34,6 +35,7 @@ import visionable from "./visionable.png";
 import noah from "./noah.png";
 
 export {
+  richemont,
   rutgers,
   stevens,
   java,

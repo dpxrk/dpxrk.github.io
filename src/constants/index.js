@@ -23,6 +23,7 @@ import {
   noah,
   python,
   java,
+  richemont,
 } from "../assets";
 
 export const navLinks = [
@@ -55,6 +56,10 @@ const services = [
   },
   {
     title: "Full Stack Developer",
+    icon: creator,
+  },
+  {
+    title: "P2P Procurement Specialist",
     icon: creator,
   },
 ];
@@ -120,12 +125,31 @@ const technologies = [
 
 const experiences = [
   {
+    title: "P2P Procurement Specialist",
+    company_name: "Richemont North America",
+    date: "August 2024 - Present",
+    icon: richemont,
+    iconBg: "#FFFEFE",
+    points: [
+      "Spearheaded the strategic Vendor Due Diligence initiative, conducting comprehensive assessments of high-value vendors across all maisons to mitigate risks and ensure corporate compliance",
+      "Architected and implemented an innovative AI-driven Teams Bot utilizing Power Virtual Agent and Power Automate, revolutionizing stakeholder access to critical Procurement intelligence",
+      "Analyzed and authorized Purchase Orders spanning a diverse financial spectrum from $5,000 to $5 million, demonstrating adept fiscal management through the SAP",
+      "Delivered high-impact solutions for executive-level ad hoc projects, showcasing adaptability and strategic problem-solving skills",
+    ],
+  },
+
+  {
     title: "Graduate Student",
     company_name: "Stevens Institute of Technology",
     icon: stevens,
     iconBg: "#FFFEFE",
     date: "May 2024 - Present",
-    points: ["Pursuing a Masters in Computer Science"],
+    points: [
+      "Pursuing a Masters in Computer Science with a current GPA of 4.0",
+      "Completed Intro to Java Programming",
+      "Completed Data Structures and Algorithms",
+      "Currently taking Algorithms and System Designs",
+    ],
   },
   {
     title: "Full Stack Developer",
