@@ -63,10 +63,22 @@ export default function WaveCanvas({ progressRef, hudRef }) {
 
     function onPointer(e) {
       const r = canvas.getBoundingClientRect();
-      ptr.x = (e.clientX - r.left) / r.width;
-      ptr.y = 1 - (e.clientY - r.top) / r.height; // gl uv is bottom-up
+      if (r.width === 0 || r.height === 0) return; // guard against NaN during init
+      ptr.x = Math.min(1, Math.max(0, (e.clientX - r.left) / r.width));
+      ptr.y = Math.min(1, Math.max(0, 1 - (e.clientY - r.top) / r.height)); // gl uv is bottom-up
       ptr.amp = 0.5; // sharp rise
       ptr.t0 = performance.now();
+    }
+
+    // WCAG-AA legibility floor: assert the text backdrop scrim only as the field
+    // brightens behind text, so a bright peak can't wash out the proof.
+    let lastScrim = -1;
+    function setScrim(peak) {
+      const scrim = Math.max(0, Math.min(0.6, ((peak - 0.6) / 0.4) * 0.6));
+      if (Math.abs(scrim - lastScrim) > 0.02) {
+        document.documentElement.style.setProperty("--scrim", scrim.toFixed(2));
+        lastScrim = scrim;
+      }
     }
 
     // ---- governor: rolling fps → tier ----
@@ -201,6 +213,7 @@ export default function WaveCanvas({ progressRef, hudRef }) {
       u.time = 6.0;
       renderer.render(u);
       writeHud(u, performance.now());
+      setScrim(u.peak); // reduced-motion still sits at the peak — hold the scrim
     }
 
     function loop(now) {
@@ -213,6 +226,7 @@ export default function WaveCanvas({ progressRef, hudRef }) {
       renderer.step(dt, u);
       renderer.render(u);
       writeHud(u, now);
+      setScrim(u.peak);
       governor(now, dt * 1000);
 
       raf = requestAnimationFrame(loop);
@@ -248,6 +262,7 @@ export default function WaveCanvas({ progressRef, hudRef }) {
       window.removeEventListener("resize", resize);
       window.removeEventListener("pointermove", onPointer);
       window.removeEventListener("pointerdown", onPointer);
+      document.documentElement.style.removeProperty("--scrim");
       renderer && renderer.dispose();
     };
   }, [progressRef, hudRef]);

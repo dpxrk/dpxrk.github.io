@@ -263,7 +263,7 @@ export class WebGL2Renderer extends Renderer {
     gl.uniform1f(this._u(p, "uPeak"), u.peak);
     gl.uniform3f(this._u(p, "uLightDir"), u.lightDir[0], u.lightDir[1], u.lightDir[2]);
     gl.uniform1f(this._u(p, "uExposure"), 1.15);
-    gl.uniform1f(this._u(p, "uSat"), 0.4);
+    gl.uniform1f(this._u(p, "uSat"), 0.2); // dialed toward disciplined (was 0.4)
     gl.uniform1f(this._u(p, "uMicro"), cfg.micro);
     this._draw();
 

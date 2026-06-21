@@ -222,7 +222,8 @@ void main() {
   // thin-film iridescence — born of interference (amplitude + Fresnel driven)
   float thickness = clamp(abs(h) * 1.3 + fres * 0.4, 0.0, 1.0);
   vec3 film = thinFilm(thickness, fres);
-  float filmMix = uSat * smoothstep(0.05, 0.6, thickness);
+  // disciplined: color emerges only toward the higher-amplitude peaks, not across the field
+  float filmMix = uSat * smoothstep(0.3, 0.85, thickness);
   col = mix(col, col * (0.5 + film), filmMix);
 
   // specular sweep + constructive peak get reserved pure white as an *event*
@@ -318,7 +319,7 @@ void main() {
   // radial chromatic aberration (desktop/high tier only)
   vec3 scene;
   if (uAberration > 0.0001) {
-    vec2 off = fromCenter * (uAberration / uResolution.x) * length(fromCenter) * 2.0;
+    vec2 off = fromCenter * (uAberration / uResolution.x) * length(fromCenter);
     scene.r = texture(uScene, uv + off).r;
     scene.g = texture(uScene, uv).g;
     scene.b = texture(uScene, uv - off).b;
